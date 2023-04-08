@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head> <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new javascript</title>      
+    <link rel="stylesheet" type="text/css" href="c.css"/>
+    
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div>Tic-Tac</div>
+        <div id="name"></div>
+             </div><br>
+       <div class="game">
+        <div class="choose" id="choose"><fieldset>
+         <legend>Select for player 1:</legend>
+         <form>  
+        <input type="radio" name="colors" id="red" value="x" onclick="player(this.id)">X<br>
+        <input type="radio" name="colors" id="blue" onclick="player(this.id)">O
+      </form>
+      </fieldset>
+         <br><button class="refresh" onclick="window.location.reload(true)">refresh</button></div>
+         <div class="mainbox">
+           <button class="item" id="0" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="1" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="2" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="3" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="4" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="5" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="6" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="7" onclick="handleCellClick(this.id)" ></button>
+           <button class="item" id="8" onclick="handleCellClick(this.id)" ></button>
+         </div>
+         <div class="result announcer hide" id="result"></div>
+      </div>
+      <script src= "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"></script>
+      <script src= "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js"></script>
+      <script src= "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js"></script>
+      <script src="main.js"></script>
+</body>
+
+</html>
